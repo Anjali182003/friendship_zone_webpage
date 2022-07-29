@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <link rel="icon" href="study.jpg">
+    <script>
+        function myFunction(color) {
+            color.style.background = "rgb(235, 255, 205)"
+        }
+    </script>
+</head>
+<style>
+    h1,
+    h2 {
+        font-style: italic;
+        text-decoration: underline;
+        color: white;
+    }
+
+    a {
+        color: rgb(0, 247, 255);
+    }
+
+    body {
+        background-size: cover;
+    }
+
+    div {
+        height: 600px;
+        width: 500px;
+        background-color: greenyellow;
+        border: 2px solid black;
+        border-radius: 20px;
+
+    }
+
+    form {
+        padding: 20px;
+        text-align: left;
+    }
+</style>
+
+<body background="study.jpg">
+    <h1 align="center">Friendship Zone</h1>
+    <h2 align="center">Add your details here</h2>
+    <center>
+        <div>
+            <br><br><br><br>
+            <form action="RegistrationConfirmation.html" target="_self">
+                Name:<input type="text" placeholder="Enter your name" minlength="3" onfocus="myFunction(this)"
+                    required><br><br>
+                Email:<input type="email" placeholder="Enter your email" onfocus="myFunction(this)"><br><br>
+                Age:<input type="number" min="18" max="60" value="18" onfocus="myFunction(this)"><br><br>
+                Birth Day:<input type="date" onfocus="myFunction(this)" required><br><br>
+                Gender:<input type="radio" name="Gender" value="Gender" onfocus="myFunction(this)">Male
+                <input type="radio" name="Gender" value="Gender" onfocus="myFunction(this)">Female<br><br>
+                About:<textArea onfocus="myFunction(this)" placeholder="Type here"></textArea><br><br>
+                Phone:<input type="tel" onfocus="myFunction(this)" placeholder="Enter number"><br><br>
+                Interested in:<input type="checkbox" onfocus="myFunction(this)" required>friendship
+                <input type="checkbox" onfocus="myFunction(this)">Dating<br><br>
+                Attachment:<input type="file" onfocus="myFunction(this)"><br><br>
+                <center><input type="submit" value="Register" onfocus="myFunction(this)"><br></center>
+            </form>
+            <a href="RegistrationConfirmationforAdmin.html" target="_self"> <button onfocus="myFunction(this)">Register
+                    as Admin</button> </a>
+        </div>
+    </center>
+</body>
+
+</html>
